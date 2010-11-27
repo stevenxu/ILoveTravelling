@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:background="@drawable/bottom" android:layout_width="fill_parent"
+		android:layout_height="40.0dip">
+		<Button 
+			android:id="@+id/cancel"
+			android:layout_width="60dip"
+			android:layout_height="40dip"
+			android:text="取消"
+		/>
+		<TextView  
+		android:layout_width="80dip"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="20sp"
+		android:text="选择城市"
+		/>
+	</RelativeLayout>
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="30px" >
+		<Spinner  android:id="@+id/txCity"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_weight="9"
+    			android:layout_alignParentLeft="true"/>
+		<Button 
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:textSize="20sp"
+			android:text="查询"
+		/>
+	</LinearLayout>
+	<TableLayout 
+		android:id="@+id/table"    
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1,2,3,4"
+	    android:paddingTop="30px"
+	    >
+		
+	</TableLayout>
+	
+</LinearLayout>

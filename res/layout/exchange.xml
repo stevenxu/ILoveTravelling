@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:background="@drawable/bottom" android:layout_width="fill_parent"
+		android:layout_height="40.0dip">
+		<Button 
+			android:id="@+id/cancel"
+			android:layout_width="60dip"
+			android:layout_height="40dip"
+			android:text="取消"
+		/>
+		<TextView  
+		android:layout_width="80dip"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="20sp"
+		android:text="汇率转换"
+		/>
+	</RelativeLayout>
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="30px" >
+		<Spinner  android:id="@+id/txCity"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_weight="4"
+    			android:layout_alignParentLeft="true"/>
+    	<TextView  
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:textSize="20sp"
+				android:text="兑换："
+		/>
+		<Spinner  android:id="@+id/xtCity"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_weight="4"
+    			android:layout_alignParentLeft="true"/>
+	</LinearLayout>
+	<RelativeLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="10px" >
+		<EditText android:id="@+id/edit_text" 
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content" 
+				  android:hint="输入转换的金额"
+				  android:layout_weight="1"
+				  android:numeric="integer"/>
+		<Button 
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textSize="20sp"
+			android:text="查询"
+			android:layout_alignParentRight="true"
+		/>
+		<DigitalClock android:id="@+id/digitalClock"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:gravity="center" 
+		android:textSize="20sp"/>
+	</RelativeLayout>
+	<TableLayout 
+		android:id="@+id/table"    
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1,2"
+	    android:paddingTop="10px"
+	    >
+	</TableLayout>
+</LinearLayout>
